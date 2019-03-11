@@ -1,0 +1,15 @@
+.App {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav a {
+  text-decoration: none;
+  margin: 0.5rem;
+  font-size: 20px;
+  color:#F05327;
+}

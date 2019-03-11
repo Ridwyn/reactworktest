@@ -1,25 +1,20 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./css/App.css";
+import Frame2 from "./components/Frame2";
+import Frame21 from "./components/Frame21";
+import { Route, Link } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Route exact path="/" component={Frame2} />
+        <Route exact path="/frame21" component={Frame21} />
+
+        <div className="nav">
+          <Link to="/">Frame2</Link>
+          <Link to="/frame21">Frame21</Link>
+        </div>
       </div>
     );
   }

@@ -9,7 +9,6 @@
     "express": "^4.16.4",
     "express-favicon": "^2.0.1",
     "gh-pages": "^2.0.1",
-    "homepage": "https://ridwyn.github.io/reactworktest",
     "path": "^0.12.7",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",

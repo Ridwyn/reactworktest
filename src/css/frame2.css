@@ -44,14 +44,19 @@
 }
 
 .book-now {
-  background: #fc9b04;
-  width: 303.59px;
-  height: 40px;
-  text-align: center;
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  right: 21%;
+  bottom: 15%;
+  background-color: #fc9b04;
+  z-index: -1;
+  transform: skew(-30deg);
 }
 
 /* book now btn */
 .book-now-btn {
+  display: relative;
   color: #ffffff;
   font-family: Montserrat;
   font-style: normal;
@@ -60,6 +65,10 @@
   font-size: 28px;
   letter-spacing: 0.02em;
   text-decoration: none;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  padding: 0.7rem;
 }
 
 .banner2 {

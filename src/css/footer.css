@@ -1,0 +1,20 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 2rem;
+  background: #333;
+  color: #fff;
+  justify-items: center;
+}
+
+.footer .info {
+  padding: 0.5rem;
+}
+
+.footer .about li {
+  padding-bottom: 0.4rem;
+}
+
+.footer .contact li {
+  padding-bottom: 0.4rem;
+}

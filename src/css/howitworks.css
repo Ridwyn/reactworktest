@@ -1,0 +1,32 @@
+.howitworks {
+  text-align: center;
+}
+.howitworks h3 {
+  font-size: 30px;
+}
+
+.howitworks .bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.howitworks .bottom a {
+  text-decoration: none;
+}
+
+.howitworks .bottom .link1 a {
+  background: #fc9b04;
+  color: #fff;
+  padding: 1rem;
+}
+.howitworks .bottom .link2 a {
+  background: #f05327;
+  color: #fff;
+  padding: 1rem;
+}
+
+.howitworks .bottom p {
+  font-size: 20px;
+  margin: 1.8rem;
+}

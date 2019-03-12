@@ -1,15 +1,26 @@
 .App {
   margin: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
-.nav {
-  text-align: center;
-}
-
-.nav a {
+.left,
+.right {
   text-decoration: none;
   margin: 0.5rem;
-  font-size: 20px;
-  color:#F05327;
+  font-size: 40px;
+  color: #fff;
+  z-index: 10;
+}
+
+.left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.right {
+  position: absolute;
+  top: 50%;
+  right: 0;
 }

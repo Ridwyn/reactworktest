@@ -2,6 +2,9 @@
   "name": "upworkproject",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "10.7.0"
+  },
   "dependencies": {
     "express": "^4.16.4",
     "express-favicon": "^2.0.1",
@@ -26,9 +29,6 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "engines": {
-    "node": "10.7.0"
   },
   "browserslist": [
     ">0.2%",

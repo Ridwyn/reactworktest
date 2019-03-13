@@ -1,0 +1,286 @@
+a {
+  text-decoration: none;
+}
+
+/* how it works */
+.howitworks {
+  text-align: center;
+}
+
+.howitworks img {
+  width: 100%;
+}
+.howitworks h3 {
+  font-size: 30px;
+}
+
+.howitworks .bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.howitworks .bottom a {
+  text-decoration: none;
+}
+
+.howitworks .bottom .link1 a {
+  background: #fc9b04;
+  color: #fff;
+  padding: 1rem;
+}
+.howitworks .bottom .link2 a {
+  background: #f05327;
+  color: #fff;
+  padding: 1rem;
+}
+
+.howitworks .bottom p {
+  font-size: 20px;
+  margin: 1.8rem;
+}
+
+/* QUOTATION */
+.quotation {
+  margin: 0;
+  display: relative;
+  height: 410px;
+  background: #333;
+}
+
+.quotation .text {
+  height: 300px;
+  text-align: center;
+  color: #fff !important;
+  z-index: 99;
+}
+.quotation .text h1 {
+  margin-top: 0rem;
+  padding-top: 2rem;
+  font-size: 40px;
+  z-index: 99;
+}
+
+.quotation .text h2 {
+  margin-top: 0rem;
+  padding-top: 2rem;
+  font-size: 40px;
+  z-index: 99;
+  display: absolute;
+  top: 0;
+  left: 0;
+}
+.quotation .text h2 span {
+  color: #fc9b04;
+}
+.bgquotation img {
+  position: absolute;
+  width: 98.9%;
+  max-height: 97%;
+}
+
+/* EVENTS */
+.events {
+  background: #222;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  display: relative;
+  padding: 6rem;
+}
+
+.events img {
+  width: 100%;
+}
+.events-head h2 {
+  color: #fc9b04;
+  display: inline-block;
+  font-size: 48px;
+  letter-spacing: 0.02em;
+}
+
+.events-head a {
+  background-color: #fc9b04;
+  font-size: 20px;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.event-p {
+  font-weight: 500;
+  line-height: normal;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.slider1 {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.slider1 .card {
+  margin-left: 1rem;
+  border: #fff 2px solid;
+  border-radius: 28px 28px 0 0;
+  width: 300px;
+  color: #fff;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.slider1 .card img {
+  width: 100%;
+}
+
+.slider1 .card h6 {
+  line-height: normal;
+  font-size: 18px;
+  margin: 0;
+}
+.slider1 .card p {
+  margin: 0;
+}
+
+.slider1 .card .card-contents {
+  padding: 0.5rem;
+}
+
+.slider1 .card .card-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0.2rem;
+}
+
+.slider1 .card .card-details a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #fc9b04;
+  text-align: center;
+}
+
+.slider1 .card .card-details {
+  position: absolute;
+  border: #fc9b04 1px solid;
+  color: #fc9b04;
+  width: 80px;
+  bottom: 2%;
+  right: 5%;
+}
+
+.view {
+  width: 100%;
+  text-align: center;
+}
+
+.events .viewall {
+  border: #fff 2px solid;
+  color: #fff;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+/* Best offers */
+.bestoffers {
+  text-align: center;
+  position: relative;
+}
+
+.bestoffers .slider2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  justify-items: center;
+  padding-bottom: 5rem;
+}
+.bestoffers h3 {
+  color: #fc9b04;
+  font-size: 48px;
+}
+
+.bestoffers .viewall {
+  width: 200px;
+  height: 25px;
+  transform: skew(-30deg);
+  border: #222222 2px solid;
+  color: #222;
+  font-size: 28px;
+  text-decoration: none;
+  padding: 0.5rem;
+  position: absolute;
+  left: 40%;
+  bottom: 3%;
+}
+
+.view h6 {
+  color: #222;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  position: absolute;
+  left: 43%;
+  bottom: 5%;
+}
+
+/* fts points */
+
+.ftspoints {
+  background: #222;
+  position: relative;
+}
+.ftpointsimg {
+  width: 500px;
+  margin: 0 auto;
+}
+.know {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.ftspoints .knowmore {
+  width: 200px;
+  height: 25px;
+  transform: skew(-30deg);
+  border: #fc9b04 2px solid;
+  color: #fc9b04;
+  font-size: 28px;
+  text-decoration: none;
+  padding: 0.5rem;
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+}
+
+.ftspoints .know h6 {
+  color: #fc9b04;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  position: absolute;
+  left: 53%;
+  bottom: 5%;
+}
+
+/* PARTNER WITH US */
+.partnerwithus {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr 1fr;
+  grid-gap: 5rem;
+  height: 850;
+  position: relative;
+}
+
+.partnerwithus img {
+  width: 100%;
+}
+
+.handshake {
+  margin-top: 10rem;
+}
+
+.partnertext {
+  margin-top: 8rem;
+}
+.running {
+  margin-top: -2rem;
+}

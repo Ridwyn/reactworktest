@@ -1,3 +1,7 @@
+.header {
+  position: relative;
+}
+
 .header-1 {
   display: grid;
   grid-template-columns: 1fr 300px;
@@ -12,6 +16,7 @@
   text-decoration: none;
 }
 .header-1 div {
+  margin-left: 11rem;
   padding-bottom: 20px;
 }
 
@@ -37,11 +42,13 @@
 }
 
 .header-2 .partner {
+  margin-left: 18rem;
   border: #fff 1px solid;
   transform: skew(-30deg);
 }
 
 .header-2 .clubs {
+  margin-left: 0.5rem;
   border: #fc9b04 1px solid;
   border-radius: 10px;
   color: #fc9b04;
@@ -50,4 +57,27 @@
 
 ul li {
   list-style-type: none;
+}
+
+/* POLYGON */
+.polygon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.polygon2 {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+
+.offer {
+  position: absolute;
+  bottom: 0;
+  left: 12%;
+}
+
+.close {
+  display: none !important;
 }

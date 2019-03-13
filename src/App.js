@@ -6,15 +6,14 @@ import Screen1 from "./components/Screen1";
 import Quotation from "./components/Quotation";
 import HowItWorks from "./components/HowItWorks";
 import Footer from "./components/Footer";
+import MainPage from './components/MainPage'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header />
-        <Screen1 />
-        <Quotation />
-        <HowItWorks />
+       <MainPage/>
         <Footer />
       </div>
     );

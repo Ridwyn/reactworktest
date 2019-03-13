@@ -17,6 +17,14 @@ import running from "../imgs/running.png";
 import partnerbtn from "../imgs/partnerbtn.png";
 import ice from "../imgs/ice.png";
 import baseball from "../imgs/baseball.png";
+import booknplay from "../imgs/booknplay.png";
+import learnasport from "../imgs/learnasport.png";
+import card1 from "../imgs/card1.png";
+import card2 from "../imgs/card2.png";
+import card3 from "../imgs/card3.png";
+import eventselect from "../imgs/eventselect.png";
+import eventview from "../imgs/eventview.png";
+
 
 export class MainPage extends Component {
   ConponentWillMount() {}
@@ -42,7 +50,7 @@ export class MainPage extends Component {
           <div className="text">
             <h1>“</h1>
             <h2>
-              Wining isn't everything it's the <span>only</span> thing
+              Wining isn't everything, it's the <span>only</span> thing
             </h2>
           </div>
         </div>
@@ -54,11 +62,11 @@ export class MainPage extends Component {
           <div className="bottom">
             <div className="link1">
               <p>Want to play a sport</p>
-              <Link to="#"> BOOK N PLAY</Link>
+             <Link to=""> <img src={booknplay}/></Link>
             </div>
             <div className="link2">
               <p>Looking for a sports trainer</p>
-              <Link to="#"> LEARN A SPORT</Link>
+             <Link to=""> <img src={learnasport} /></Link>
             </div>
           </div>
         </div>
@@ -68,7 +76,7 @@ export class MainPage extends Component {
           <div className="events-head">
             <h2>EVENTS</h2>{" "}
             <span>
-              <Link to="#"> Select Sport</Link>
+              <Link to="#"> <img src={eventselect} alt=""/></Link>
             </span>
           </div>
           <p className="event-p">
@@ -77,85 +85,28 @@ export class MainPage extends Component {
 
           <div className="slider1">
             <div className="card">
-              <img src={event1} alt="" />
-              <div className="card-contents">
-                <h6>NAME OF THE EVENT</h6>
-                <p> Organize by Sport Club</p>
-                <div className="card-info">
-                  <ul>
-                    <li>13-Jan-2019</li>
-                    <li>17:00-19:00</li>
-                    <li>SP Stadium</li>
-                  </ul>
-                  <ul>
-                    <li>Age 18-21</li>
-                    <li>15%</li>
-                  </ul>
-                </div>
-                <div className="card-details">
-                  {" "}
-                  <Link to="#">Details</Link>
-                </div>
+              <img src={card1} alt="" />        
               </div>
-            </div>
+        
             {/* card2 */}
             <div className="card">
-              <img src={event2} alt="" />
-              <div className="card-contents">
-                <h6>NAME OF THE EVENT</h6>
-                <p> Organize by Sport Club</p>
-                <div className="card-info">
-                  <ul>
-                    <li>13-Jan-2019</li>
-                    <li>17:00-19:00</li>
-                    <li>SP Stadium</li>
-                  </ul>
-                  <ul>
-                    <li>Age 18-21</li>
-                    <li>15%</li>
-                  </ul>
-                </div>
-                <div className="card-details">
-                  {" "}
-                  <Link to="#">Details</Link>
-                </div>
-              </div>
-            </div>
+            <img src={card2} alt="" /> 
+          </div>
             {/* card3 */}
             <div className="card">
-              <img src={event3} alt="" />
-              <div className="card-contents">
-                <h6>NAME OF THE EVENT</h6>
-                <p> Organize by Sport Club</p>
-                <div className="card-info">
-                  <ul>
-                    <li>13-Jan-2019</li>
-                    <li>17:00-19:00</li>
-                    <li>SP Stadium</li>
-                  </ul>
-                  <ul>
-                    <li>Age 18-21</li>
-                    <li>15%</li>
-                  </ul>
-                </div>
-                <div className="card-details">
-                  {" "}
-                  <Link to="#">Details</Link>
-                </div>
-              </div>
+              <img src={card3} alt="" />
             </div>
-          </div>
-
+            </div>
           <div className="view">
             <Link className="viewall" to="#">
-              View All
+             <img src={eventview} alt="" />
             </Link>
           </div>
         </div>
 
         {/* Best Offer */}
         <div className="bestoffers">
-          <h3>BEST OFFERS</h3>
+         <div className="bestoffers-h3"> <h3>BEST OFFERS</h3></div>
           <div className="slider2">
             <div className="offerimg">
               <img src={ice} alt="" />

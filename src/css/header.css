@@ -4,8 +4,27 @@
 
 .header-1 {
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr 500px;
   background: #ffffff;
+}
+
+.header-1 .socialcontact {
+  margin-left: 0 !important;
+  justify-self: end;
+}
+
+.header-1 .social-links {
+  float: right;
+  margin: 0;
+}
+
+.header-1 .email-tel {
+  clear: both;
+  margin: 0;
+}
+
+.header-1 .citysport img {
+  padding: 0.5rem;
 }
 
 .header-1 div a {
@@ -20,19 +39,24 @@
   padding-bottom: 20px;
 }
 
-.header-1 ul li {
+.header-1 li {
   display: inline-block;
   padding: 0.5rem;
 }
 
+/* HEADER 2 */
 .header-2 {
   display: grid;
-  grid-template-columns: 1fr 150px;
-  background: #333;
+  grid-template-columns: 1fr 280px;
+  background: #19191b;
   color: #fff;
   height: 50px;
   padding-top: 1.2rem;
   padding-left: 0.5rem;
+}
+
+.header-2 .user img {
+  padding: 0 1rem;
 }
 
 .header-2 a {
@@ -44,7 +68,6 @@
 .header-2 .partner {
   margin-left: 18rem;
   border: #fff 1px solid;
-  transform: skew(-30deg);
 }
 
 .header-2 .clubs {
@@ -69,15 +92,30 @@ ul li {
 .polygon2 {
   position: absolute;
   bottom: 0;
-  left: 5%;
+  left: 0.8%;
 }
 
 .offer {
   position: absolute;
   bottom: 0;
-  left: 12%;
+  left: 8%;
 }
 
 .close {
   display: none !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .header-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .header-1 .socialcontact {
+    float: none;
+  }
+  .polygon,
+  .polygon2 {
+    display: none;
+  }
 }

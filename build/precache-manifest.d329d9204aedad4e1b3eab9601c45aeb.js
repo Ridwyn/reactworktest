@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "331de2a54d3db9c38f72ac9e9b1c4a99",
-    "url": "/static/media/event1.331de2a5.png"
+    "revision": "491eefe41e64625f9c549c61b0827543",
+    "url": "/static/media/ftsplaypoints.491eefe4.png"
   },
   {
-    "revision": "4ae8504bc4255f59e6c6",
-    "url": "/static/css/main.dfc985d4.chunk.css"
+    "revision": "f95e16b05ff3a71d5e9c",
+    "url": "/static/css/main.e19ecc35.chunk.css"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
     "url": "/static/js/runtime~main.c5541365.js"
   },
   {
-    "revision": "5aa879999c960634fd9c88321e07ddc4",
-    "url": "/static/media/baseball.5aa87999.png"
+    "revision": "a1b5eff7bf51ffc1f5da32cebd6fa33b",
+    "url": "/static/media/card3.a1b5eff7.png"
   },
   {
-    "revision": "b97b3d98c30976080da0",
-    "url": "/static/js/2.aa716921.chunk.js"
+    "revision": "1bdd701c410089d22db5",
+    "url": "/static/js/2.4a4b49ab.chunk.js"
   },
   {
     "revision": "6bc39ba1c5a00739d4fa24a4e50cc0fa",
@@ -36,20 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/markus-spiske.d8f15b55.png"
   },
   {
-    "revision": "4ae8504bc4255f59e6c6",
-    "url": "/static/js/main.7a0da71f.chunk.js"
-  },
-  {
-    "revision": "6bb87c3fecb75dec729052ebcde0fd4a",
-    "url": "/static/media/event2.6bb87c3f.png"
-  },
-  {
-    "revision": "78fa66ad2b53600e1856be685a2893fb",
-    "url": "/static/media/event3.78fa66ad.png"
-  },
-  {
-    "revision": "491eefe41e64625f9c549c61b0827543",
-    "url": "/static/media/ftsplaypoints.491eefe4.png"
+    "revision": "f95e16b05ff3a71d5e9c",
+    "url": "/static/js/main.248667fa.chunk.js"
   },
   {
     "revision": "e8d58c601a3001c567098a297b869f6a",
@@ -64,11 +52,27 @@ self.__precacheManifest = [
     "url": "/static/media/ice.2028cce1.png"
   },
   {
-    "revision": "b97b3d98c30976080da0",
+    "revision": "5aa879999c960634fd9c88321e07ddc4",
+    "url": "/static/media/baseball.5aa87999.png"
+  },
+  {
+    "revision": "a0499266558a0da955ea2a1404efaa8a",
+    "url": "/static/media/booknplay.a0499266.png"
+  },
+  {
+    "revision": "954413522d02d75b0918d93a81aef995",
+    "url": "/static/media/card1.95441352.png"
+  },
+  {
+    "revision": "4a88b8423196e51e0c53f87cc42f87ef",
+    "url": "/static/media/card2.4a88b842.png"
+  },
+  {
+    "revision": "1bdd701c410089d22db5",
     "url": "/static/css/2.86d8be3b.chunk.css"
   },
   {
-    "revision": "9736296b67a797a43017b7e37eb78aee",
+    "revision": "9d811bb330659f17f8b90478350f8ae2",
     "url": "/index.html"
   }
 ];

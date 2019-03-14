@@ -1,20 +1,49 @@
+a {
+  text-decoration: none;
+}
+
 .footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 2rem;
-  background: #333;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  background: #19191b;
   color: #fff;
   justify-items: center;
+  padding: 0.5rem 3rem;
 }
 
 .footer .info {
   padding: 0.5rem;
 }
 
+.footer .info p {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+}
+
 .footer .about li {
+  color: #fff;
   padding-bottom: 0.4rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 14px;
 }
 
 .footer .contact li {
   padding-bottom: 0.4rem;
+}
+
+.footer .footersubscribe a {
+  text-decoration: none;
+  background: #fc9b04;
+  padding: 0.3rem;
+  color: #fff;
+}
+
+.footer .footersubscribe input {
+  width: 100px;
+  padding: 0.3rem;
 }

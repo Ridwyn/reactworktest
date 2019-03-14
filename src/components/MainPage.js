@@ -8,9 +8,6 @@ import Frame1 from "../imgs/Frame1.png";
 import Frame2 from "../imgs/Frame2.png";
 import picture from "../imgs/picture.png";
 import bkquotation from "../imgs/markus-spiske.png";
-import event1 from "../imgs/event1.png";
-import event2 from "../imgs/event2.png";
-import event3 from "../imgs/event3.png";
 import ftsplaypoints from "../imgs/ftsplaypoints.png";
 import handshake from "../imgs/handshake.png";
 import running from "../imgs/running.png";
@@ -24,11 +21,19 @@ import card2 from "../imgs/card2.png";
 import card3 from "../imgs/card3.png";
 import eventselect from "../imgs/eventselect.png";
 import eventview from "../imgs/eventview.png";
-
+import bestview from "../imgs/bestview.png";
+import ftsknowmore from "../imgs/ftsknowmore.png";
 
 export class MainPage extends Component {
   ConponentWillMount() {}
   render() {
+    // var settings = {
+    //   container: ".my-slider",
+    //   items: 3,
+    //   slideBy: "page",
+    //   autoplay: true
+    // }
+
     return (
       <div className="mainpage">
         <div className="screen1">
@@ -57,16 +62,24 @@ export class MainPage extends Component {
 
         {/* HowItWorks */}
         <div className="howitworks">
-          <h3>HOW IT WORKS</h3>
-          <img src={picture} alt="" />
+          <div className="div1">
+            <h3>HOW IT WORKS</h3>
+            <img src={picture} alt="" />
+          </div>
           <div className="bottom">
             <div className="link1">
               <p>Want to play a sport</p>
-             <Link to=""> <img src={booknplay}/></Link>
+              <Link to="">
+                {" "}
+                <img src={booknplay} />
+              </Link>
             </div>
             <div className="link2">
               <p>Looking for a sports trainer</p>
-             <Link to=""> <img src={learnasport} /></Link>
+              <Link to="">
+                {" "}
+                <img src={learnasport} />
+              </Link>
             </div>
           </div>
         </div>
@@ -76,37 +89,45 @@ export class MainPage extends Component {
           <div className="events-head">
             <h2>EVENTS</h2>{" "}
             <span>
-              <Link to="#"> <img src={eventselect} alt=""/></Link>
+              <Link to="#">
+                {" "}
+                <img src={eventselect} alt="" />
+              </Link>
             </span>
           </div>
           <p className="event-p">
             Look for the coming eventsto choose the best for you
           </p>
-
+            {/* USE CAROUSEL 2 HERE */}
+            
           <div className="slider1">
             <div className="card">
-              <img src={card1} alt="" />        
-              </div>
-        
+              <img src={card1} alt="" />
+            </div>
+
             {/* card2 */}
             <div className="card">
-            <img src={card2} alt="" /> 
-          </div>
+              <img src={card2} alt="" />
+            </div>
             {/* card3 */}
             <div className="card">
               <img src={card3} alt="" />
             </div>
-            </div>
+          </div>
+        
           <div className="view">
             <Link className="viewall" to="#">
-             <img src={eventview} alt="" />
+              <img src={eventview} alt="" />
             </Link>
           </div>
         </div>
 
         {/* Best Offer */}
         <div className="bestoffers">
-         <div className="bestoffers-h3"> <h3>BEST OFFERS</h3></div>
+          <div className="bestoffers-h3">
+            {" "}
+            <h3>BEST OFFERS</h3>
+          </div>
           <div className="slider2">
             <div className="offerimg">
               <img src={ice} alt="" />
@@ -118,8 +139,10 @@ export class MainPage extends Component {
 
           <Link className="linktoview" to="#">
             <div className="view">
-              <h6>View All</h6>
-              <div className="viewall" />
+              <div className="viewall">
+                {" "}
+                <img src={bestview} alt="" />
+              </div>
             </div>
           </Link>
         </div>
@@ -130,8 +153,8 @@ export class MainPage extends Component {
           </div>
           <Link className="linktoview" to="#">
             <div className="know">
-              <h6>Know More</h6>
-              <div className="knowmore" />
+              {" "}
+              <img src={ftsknowmore} />
             </div>
           </Link>
         </div>

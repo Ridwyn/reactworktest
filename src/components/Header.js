@@ -16,6 +16,9 @@ import linkdean from "../imgs/linkdean.png";
 import login from "../imgs/login.png";
 import signup from "../imgs/signup.png";
 import club from "../imgs/club.png";
+import partner from "../imgs/partner.png";
+import city from "../imgs/city.png";
+import closebtn from "../imgs/closebtn.png";
 
 export class Header extends Component {
   constructor(props) {
@@ -23,18 +26,41 @@ export class Header extends Component {
     this.state = { display: false };
   }
 
+  toggle = e => {
+    if (this.state.display == false) {
+      this.setState({ display: true });
+    } else if (this.state.display == true) {
+      this.setState({ display: false });
+    }
+  };
+
   render() {
+    let cityPop = "cityPopUp";
+    if (this.state.display) {
+      cityPop += " " + "open";
+      console.log(cityPop);
+    } else if (this.state.display == false) {
+      cityPop = "cityPopUp close";
+      console.log(cityPop);
+    }
     return (
       <div className="header">
         <img className="polygon" src={polygon} alt="" />
         <img className="polygon2" src={polygon2} alt="" />
         <img className="offer" src={offer} alt="" />
+
         <div className="header-1">
           <div className="citysport">
             <img src={logo} alt="" />
 
-            <img src={selectcity} alt="" />
-            <img src={selectsport} alt="" />
+            <a href="#">
+              {" "}
+              <img src={selectcity} onClick={this.toggle} alt="" />
+            </a>
+            <a href="#">
+              {" "}
+              <img src={selectsport} alt="" />
+            </a>
           </div>
           <div className="socialcontact">
             <ul className="social-links">
@@ -64,19 +90,36 @@ export class Header extends Component {
         <div className="header-2">
           <div>
             <Link className="partner" to="#">
-              Partner With Us
+              <img src={partner} alt="" />
             </Link>{" "}
-            <img src={club} alt="" />
+            <Link className="club" to="#">
+              {" "}
+              <img src={club} alt="" />
+            </Link>
           </div>
           <div className="user">
             <img src={login} alt="" />
             <img src={signup} alt="" />
           </div>
         </div>
-        {/* <div className="citypopup" refs={this.cityPop}>
-          Select city
+        {/* Popups */}
+        <div className={cityPop}>
+          <div>
+            <img src={city} alt="" />{" "}
+            <a href="#">
+              <img onClick={this.toggle} src={closebtn} alt="" />
+            </a>
+          </div>
+          <div className="cityText">Select City</div>
+          <div>
+            <input className="citySelect" type="text" />
+          </div>{" "}
+          <div>
+            <a href="" className="citySubmit">
+              Submit
+            </a>
+          </div>
         </div>
-        <div className="sportspopup" /> */}
       </div>
     );
   }

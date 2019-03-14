@@ -125,7 +125,7 @@ a {
 
 /* EVENTS */
 .events {
-  background: #222;
+  background: #19191b;
   margin-top: 2rem;
   position: relative;
   padding-left: 6rem;
@@ -141,7 +141,7 @@ a {
   top: 0;
   left: 0;
   z-index: -1;
-  background: #222;
+  background: #19191b;
   transform-origin: right bottom;
   transform: skewY(4deg);
 }
@@ -258,7 +258,7 @@ a {
 .bestoffers h3 {
   color: #fc9b04;
   position: absolute;
-  left: 50%;
+  left: 40%;
   top: 3%;
   font-size: 48px;
   z-index: 10;
@@ -268,15 +268,12 @@ a {
 .bestoffers .viewall {
   width: 200px;
   height: 25px;
-  transform: skew(-30deg);
-  border: #222222 2px solid;
-  color: #222;
   font-size: 28px;
   text-decoration: none;
   padding: 0.5rem;
   position: absolute;
   left: 40%;
-  bottom: 3%;
+  bottom: 8%;
   z-index: 10;
 }
 
@@ -293,7 +290,7 @@ a {
 
 /* fts points */
 .ftspoints {
-  background: #222;
+  background: #19191b;
   margin-top: 8rem;
   position: relative;
   padding-left: 6rem;
@@ -310,17 +307,22 @@ a {
   top: 0;
   left: 0;
   z-index: -1;
-  background: #222;
+  background: #19191b;
   transform-origin: right bottom;
   transform: skewY(4deg);
 }
 
 .ftpointsimg {
-  width: 500px;
+  width: 65%;
   margin: 0 auto;
 }
-.know {
-  width: 500px;
+
+.ftpointsimg img {
+  width: 100%;
+}
+
+.ftspoints .know {
+  width: 20%;
   margin: 0 auto;
 }
 
@@ -352,10 +354,10 @@ a {
 .partnerwithus {
   text-align: center;
   display: grid;
-  grid-template-columns: 0.7fr 1.3fr 1fr;
-  grid-gap: 5rem;
-  height: 850;
+  grid-template-columns: 0.7fr 2fr 1.5fr;
+  grid-gap: 2rem;
   position: relative;
+  margin-left: 2rem;
 }
 
 .partnerwithus::after {
@@ -382,12 +384,61 @@ a {
 }
 
 .handshake {
-  margin-top: 10rem;
+  margin-top: 7rem;
 }
 
 .partnertext {
-  margin-top: 8rem;
+  margin-top: 7rem;
 }
+
+.partnertext h3 {
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 25px;
+  margin: 0;
+}
+
+.partnertext p {
+  text-align: center;
+  font-size: 17px;
+}
+.partnerbtn {
+  width: 80% !important;
+}
+
 .running {
   margin-top: -2rem;
+}
+
+/* responsive fpr mobile */
+@media only screen and (max-width: 600px) {
+  /* quotation */
+
+  .quotation .text {
+    width: 100%;
+  }
+  .quotation .text h1 {
+    font-size: 180px;
+  }
+  .quotation .text h2 {
+    font-size: 50px;
+  }
+
+  /* How its works */
+  .howitworks .div1 {
+    display: none;
+  }
+  .howitworks .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  /* EVENTS */
+  .events .slider1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }

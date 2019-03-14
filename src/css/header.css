@@ -27,13 +27,6 @@
   padding: 0.5rem;
 }
 
-.header-1 div a {
-  background: #ef9322;
-  color: #fff;
-  width: 80px;
-  padding: 0.5rem;
-  text-decoration: none;
-}
 .header-1 div {
   margin-left: 11rem;
   padding-bottom: 20px;
@@ -50,7 +43,6 @@
   grid-template-columns: 1fr 280px;
   background: #19191b;
   color: #fff;
-  height: 50px;
   padding-top: 1.2rem;
   padding-left: 0.5rem;
 }
@@ -67,7 +59,6 @@
 
 .header-2 .partner {
   margin-left: 18rem;
-  border: #fff 1px solid;
 }
 
 .header-2 .clubs {
@@ -105,7 +96,57 @@ ul li {
   display: none !important;
 }
 
-@media only screen and (max-width: 500px) {
+/* POPUPS */
+.open {
+  visibility: visible !important;
+  display: block;
+}
+
+.close {
+  visibility: hidden;
+
+  display: none;
+}
+
+.cityPopUp {
+  text-align: center !important;
+  width: 200px !important;
+  border: #333 2px solid;
+  background: #fff;
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+}
+
+.cityPopUp div {
+  margin: 0.5rem 0rem;
+}
+
+.cityPopUp .cityPop img {
+  padding: 0.5rem !important;
+}
+
+.cityPopUp .citySubmit {
+  color: #fff !important;
+  background: #fc9b04;
+  padding: 0.5rem !important;
+  margin: 0.5rem 0rem;
+}
+.cityPopUp .citySelect {
+  color: #333;
+  border: #fc9b04 1px solid;
+  padding: 0.5rem !important;
+  width: 80% !important;
+  margin: 0.5rem;
+}
+
+.cityPop .cityText {
+  color: #333;
+  border: #fc9b04 1px solid;
+  padding: 0.2rem;
+}
+
+@media only screen and (max-width: 600px) {
   .header-1 {
     display: grid;
     grid-template-columns: 1fr;
@@ -115,7 +156,20 @@ ul li {
     float: none;
   }
   .polygon,
-  .polygon2 {
+  .polygon2,
+  .offer {
     display: none;
+  }
+  .header-1 div {
+    margin-left: 0;
+  }
+  /* HEADER 2 */
+  .header-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+  }
+  .header-2 a {
+    margin-left: 0 !important;
   }
 }
